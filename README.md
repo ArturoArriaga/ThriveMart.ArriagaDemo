@@ -1,6 +1,18 @@
 # Thrive Mart
 
-Thrive Mart is a model of a grocery story for iOS. It demonstrations the following common iOS development patterns: Model-View-Controller deisgn architecture, UIKit, Autolayout of views with a programmatic layout (i.e. no storyboards), Nested UICollectionViewController design pattern. 
+Thrive Mart is a model of a grocery story for iOS. It demonstrations the following common iOS development patterns: 
+* **Model-View-Controller deisgn architecture**
+* **Layout with AutoLayout** - programmatic layout (i.e. no storyboards)
+* **Animation with Constraints**
+* ** Nested UICollectionViewController design pattern ** 
+
+
+### iOS Frameworks and other technologies
+
+* UIKit
+* Foundation
+* Core Animation
+* Core Graphics
 
 
 ### Prerequisites
