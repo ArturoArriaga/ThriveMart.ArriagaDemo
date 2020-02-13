@@ -21,14 +21,15 @@ iOS 13.2+
 Swift 5+
 Xcode 11+
 
-![](ThriveMar1.png)
-![](ThriveMart2.png)
-![](ThriveMart3.png)
+![](ThriveMart.ArriagaDemo/ScreenShots/ThriveMart1.png)
+![](ThriveMart.ArriagaDemo/ScreenShots/ThriveMart2.png)
+![](ThriveMart.ArriagaDemo/ScreenShots/ThriveMart3.png)
 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
 
 ## Versioning
 
