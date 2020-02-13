@@ -1,0 +1,93 @@
+//
+//  ProductStreamController.swift
+//  ThriveMart.ArriagaDemo
+//
+//  Created by Art Arriaga on 2/12/20.
+//  Copyright © 2020 ArturoArriaga.IO. All rights reserved.
+//
+import UIKit
+
+class ProductStreamController: UICollectionViewController {
+        
+    var adImage = #imageLiteral(resourceName: "yourAd")
+    
+    var products: [Product] = [
+        Product(itemName: "Gala Apples", imageName: "apple", price: 2.39),
+        Product(itemName: "Asaparagus", imageName: "asparagus", price: 2.39),
+        Product(itemName: "Avocados", imageName: "avocados", price: 1.50),
+        Product(itemName: "Bell Peppers", imageName: "bellPepper", price: 2.99),
+        Product(itemName: "Roses", imageName: "roses", price: 12.99),
+        Product(itemName: "Deli Meat", imageName: "deliMeat", price: 4.29),
+    ]
+    
+    //MARK: Controller Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        collectionView.backgroundColor = #colorLiteral(red: 0.9289988279, green: 0.9077536464, blue: 0.8706553578, alpha: 1)
+        RegisterCollectionViewCells()
+    }
+    
+    fileprivate func RegisterCollectionViewCells() {
+        collectionView.register(ProductCell.self, forCellWithReuseIdentifier: ProductCell.reuseIdentifier)
+        collectionView.register(AdvertisementCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AdvertisementCell.reuseIdentifier)
+    }
+    
+    init() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        super.init(collectionViewLayout: layout)
+        collectionView.decelerationRate = .normal
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+//MARK: Delegate and Data Source
+extension ProductStreamController {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        1
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        6
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCell.reuseIdentifier, for: indexPath) as! ProductCell
+        cell.product = self.products[indexPath.item]
+        return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AdvertisementCell.reuseIdentifier, for: indexPath) as! AdvertisementCell
+        footer.imageView.image = self.adImage
+        footer.backgroundColor = .purple
+        
+        return footer
+    }
+    
+}
+//MARK: Sizing and Inset for Controller
+extension ProductStreamController: UICollectionViewDelegateFlowLayout{
+    
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+         return .init(width: 275, height: 200)
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+         return .init(width: 120, height: 200)
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+         return 12
+     }
+     
+     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+         return .init(top: 12, left: 12, bottom: 12, right: 12)
+     }
+     
+    
+}
