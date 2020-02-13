@@ -9,9 +9,9 @@ iOS 13.2+
 Swift 5+
 Xcode 11+
 
-![](ThriveMar1.png)
-![](ThriveMart2.png)
-![](ThriveMart3.png)
+![](/Screenshots/ThriveMart1.png)
+![](/Screenshots/ThriveMart2.png)
+![](/ScreenShots/ThriveMart3.png)
 
 
 ## Contributing
