@@ -9,9 +9,9 @@ iOS 13.2+
 Swift 5+
 Xcode 11+
 
-![](/Screenshots/ThriveMart1.png)
-![](/Screenshots/ThriveMart2.png)
-![](/ScreenShots/ThriveMart3.png)
+![](ThriveMart.ArriagaDemo/Screenshots/ThriveMart1.png)
+![](ThriveMart.ArriagaDemo/Screenshots/ThriveMart2.png)
+![](ThriveMart.ArriagaDemo/ScreenShots/ThriveMart3.png)
 
 
 ## Contributing
