@@ -37,6 +37,10 @@
 		591FACE923F4EAC200B9EC7F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591FACE623F4EAAA00B9EC7F /* Rubik-Regular.ttf */; };
 		591FACEA23F4EAC500B9EC7F /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591FACE523F4EAA200B9EC7F /* Rubik-Medium.ttf */; };
 		591FACEC23F4EB8000B9EC7F /* trees2.png in Resources */ = {isa = PBXBuildFile; fileRef = 591FACEB23F4EB8000B9EC7F /* trees2.png */; };
+		59DEA0A623F503100091C42B /* ThriveMart3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DEA0A523F503100091C42B /* ThriveMart3.png */; };
+		59DEA0A823F503150091C42B /* ThriveMart2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DEA0A723F503150091C42B /* ThriveMart2.png */; };
+		59DEA0AA23F5031A0091C42B /* ThriveMart1.png in Resources */ = {isa = PBXBuildFile; fileRef = 59DEA0A923F5031A0091C42B /* ThriveMart1.png */; };
+		59DEA0AC23F503920091C42B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 59DEA0AB23F503920091C42B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +76,10 @@
 		591FACE623F4EAAA00B9EC7F /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		591FACE723F4EAB100B9EC7F /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 		591FACEB23F4EB8000B9EC7F /* trees2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees2.png; sourceTree = "<group>"; };
+		59DEA0A523F503100091C42B /* ThriveMart3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThriveMart3.png; sourceTree = "<group>"; };
+		59DEA0A723F503150091C42B /* ThriveMart2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThriveMart2.png; sourceTree = "<group>"; };
+		59DEA0A923F5031A0091C42B /* ThriveMart1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThriveMart1.png; sourceTree = "<group>"; };
+		59DEA0AB23F503920091C42B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 		591FAC9123F4E4FE00B9EC7F = {
 			isa = PBXGroup;
 			children = (
+				59DEA0AB23F503920091C42B /* README.md */,
 				591FAC9C23F4E4FE00B9EC7F /* ThriveMart.ArriagaDemo */,
 				591FAC9B23F4E4FE00B9EC7F /* Products */,
 			);
@@ -114,6 +123,7 @@
 				591FAC9D23F4E4FE00B9EC7F /* AppDelegate.swift */,
 				591FAC9F23F4E4FE00B9EC7F /* SceneDelegate.swift */,
 				591FACA323F4E50100B9EC7F /* Assets.xcassets */,
+				59DEA0A423F502E20091C42B /* ScreenShots */,
 				591FACA823F4E50100B9EC7F /* LaunchScreen.storyboard */,
 				591FACAB23F4E50100B9EC7F /* Info.plist */,
 				591FACA523F4E50100B9EC7F /* Preview Content */,
@@ -243,6 +253,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		59DEA0A423F502E20091C42B /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				59DEA0A923F5031A0091C42B /* ThriveMart1.png */,
+				59DEA0A723F503150091C42B /* ThriveMart2.png */,
+				59DEA0A523F503100091C42B /* ThriveMart3.png */,
+			);
+			path = ScreenShots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,9 +324,13 @@
 				591FACAA23F4E50100B9EC7F /* LaunchScreen.storyboard in Resources */,
 				591FACE823F4EABF00B9EC7F /* Rubik-Light.ttf in Resources */,
 				591FACEC23F4EB8000B9EC7F /* trees2.png in Resources */,
+				59DEA0A623F503100091C42B /* ThriveMart3.png in Resources */,
 				591FACA723F4E50100B9EC7F /* Preview Assets.xcassets in Resources */,
+				59DEA0A823F503150091C42B /* ThriveMart2.png in Resources */,
+				59DEA0AA23F5031A0091C42B /* ThriveMart1.png in Resources */,
 				591FACEA23F4EAC500B9EC7F /* Rubik-Medium.ttf in Resources */,
 				591FACE923F4EAC200B9EC7F /* Rubik-Regular.ttf in Resources */,
+				59DEA0AC23F503920091C42B /* README.md in Resources */,
 				591FACA423F4E50100B9EC7F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
